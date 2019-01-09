@@ -177,17 +177,7 @@ class Prod(Base):
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
     SECRET_KEY = os.environ.get('SECRET_KEY')
-
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': '',
-            'USER': '',
-            'PASSWORD': '',
-            'HOST': 'localhost',
-            'PORT': '',
-        }
-    }
     STATIC_ROOT = os.path.join(BASE_DIR, '../static/')
+
 
 

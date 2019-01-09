@@ -25,3 +25,4 @@ venv.bak/
 .idea
 
 test_data
+.pytest_cache
