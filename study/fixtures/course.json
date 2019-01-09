@@ -1,0 +1,61 @@
+[
+    {
+        "model": "study.course",
+        "pk": 1,
+        "fields":
+            {
+
+            "name": "Web-python", "full_name": "Web-разработчик на Python", "homework_all": 10, "label": true, "date_start": "Старт курса в феврале"
+        }
+
+    },
+    {
+        "model": "study.course",
+        "pk": 2,
+        "fields":
+            {
+                "name": "C-plus-plus", "full_name": "Разработчик C++", "homework_all": 10, "label": true, "date_start": "Старт курса в феврале"
+            }
+    },
+    {
+        "model": "study.course",
+        "pk": 3,
+        "fields":
+            {
+                "name": "Python", "full_name": "Pазработчик Python", "homework_all": 10, "label": true, "date_start": "Старт курса в феврале"
+            }
+    },
+    {
+        "model": "study.course",
+        "pk": 4,
+        "fields":
+            {
+                "name": "Java", "full_name": "Разработчик Java", "homework_all": 10, "label": true, "date_start": "Старт курса в феврале"
+            }
+    },
+    {
+        "model": "study.course",
+        "pk": 5,
+        "fields":
+            {
+                "name": "Php", "full_name": "Backend разаработчик на PHP", "homework_all": 10, "label": true, "date_start": "Старт курса в феврале"
+            }
+    },
+    {
+        "model": "study.course",
+        "pk": 6,
+        "fields":
+            {
+                "name": "JS", "full_name": "Разработчик JavaScript", "homework_all": 10, "label": true, "date_start": "Старт курса в феврале"
+            }
+    },
+    {
+        "model": "study.course",
+        "pk": 7,
+        "fields":
+            {
+                "name": "Android", "full_name": "Разработчик Android", "homework_all": 10, "label": true, "date_start": "Старт курса в феврале"
+            }
+    }
+
+]

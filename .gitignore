@@ -1,0 +1,27 @@
+__pycache__
+*.py[cod]
+*.pyo
+*.pyc
+*$py.class
+
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+.idea
+
+test_data

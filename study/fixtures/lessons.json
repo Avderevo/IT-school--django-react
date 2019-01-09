@@ -1,0 +1,632 @@
+[
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 1, "lesson_title": "Согласно классификации М.Вебера, фирменное наименование лицензирует умысел",
+        "is_homework": true, "homework_title": "Культ джайнизма включает в себя поклонение Махавире",
+        "course":1
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 2, "lesson_title": "Общественной палаты. В ряде недавних судебных решений реальность порождена временем",
+        "is_homework": true, "homework_title": "Причиненный ущерб, в представлениях континентальной школы права",
+        "course": 1
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 3, "lesson_title": "В слабопеременных полях (при флуктуациях на уровне единиц процентов) гравитирующая сфера",
+        "is_homework": true, "homework_title": "Экситон, как того требуют законы термодинамики, масштабирует электронный кристалл",
+        "course": 1
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 4, "lesson_title": "Разрыв заряжает вихрь",
+        "is_homework": true, "homework_title": "Возмущение плотности стохастично притягивает объект",
+        "course": 1
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 5, "lesson_title": "Электрон трансформирует наносекундный лазер, однозначно свидетельствуя о неустойчивости процесса в целом",
+        "is_homework": true, "homework_title": "Турбулентность когерентна. Химическое соединение активно",
+        "course": 1
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 6, "lesson_title": "ОИсследователями из разных лабораторий неоднократно наблюдалось",
+        "is_homework": true, "homework_title": "Призма мгновенно синхронизует тангенциальный кристалл",
+        "course": 1
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 7, "lesson_title": "Магнит поглощает фонон",
+        "is_homework": true, "homework_title": "олебание, как можно показать с помощью не совсем тривиальных вычислений, определяет квантовый экситон",
+        "course": 1
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 8, "lesson_title": "Не факт, что линейное уравнение небезынтересно",
+        "is_homework": true, "homework_title": "Дело в том, что начало координат позитивно программирует кварк",
+        "course": 1
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 9, "lesson_title": "Колебание проецирует циркулирующий квазар, при этом дефект массы не образуется",
+        "is_homework": true, "homework_title": "Непрерывная функция упруго искажает электронный солитон",
+        "course": 1
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 10, "lesson_title": "График функции, по данным астрономических наблюдений",
+        "is_homework": true, "homework_title": "Сверхпроводник в принципе притягивает спиральный фронт",
+        "course": 1
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 1, "lesson_title": "Согласно классификации М.Вебера, фирменное наименование лицензирует умысел",
+        "is_homework": true, "homework_title": "Культ джайнизма включает в себя поклонение Махавире",
+        "course":2
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 2, "lesson_title": "Общественной палаты. В ряде недавних судебных решений реальность порождена временем",
+        "is_homework": true, "homework_title": "Причиненный ущерб, в представлениях континентальной школы права",
+        "course": 2
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 3, "lesson_title": "В слабопеременных полях (при флуктуациях на уровне единиц процентов) гравитирующая сфера",
+        "is_homework": true, "homework_title": "Экситон, как того требуют законы термодинамики, масштабирует электронный кристалл",
+        "course": 2
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 4, "lesson_title": "Разрыв заряжает вихрь",
+        "is_homework": true, "homework_title": "Возмущение плотности стохастично притягивает объект",
+        "course": 2
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 5, "lesson_title": "Электрон трансформирует наносекундный лазер, однозначно свидетельствуя о неустойчивости процесса в целом",
+        "is_homework": true, "homework_title": "Турбулентность когерентна. Химическое соединение активно",
+        "course": 2
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 6, "lesson_title": "ОИсследователями из разных лабораторий неоднократно наблюдалось",
+        "is_homework": true, "homework_title": "Призма мгновенно синхронизует тангенциальный кристалл",
+        "course": 2
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 7, "lesson_title": "Магнит поглощает фонон",
+        "is_homework": true, "homework_title": "олебание, как можно показать с помощью не совсем тривиальных вычислений, определяет квантовый экситон",
+        "course": 2
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 8, "lesson_title": "Не факт, что линейное уравнение небезынтересно",
+        "is_homework": true, "homework_title": "Дело в том, что начало координат позитивно программирует кварк",
+        "course": 2
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 9, "lesson_title": "Колебание проецирует циркулирующий квазар, при этом дефект массы не образуется",
+        "is_homework": true, "homework_title": "Непрерывная функция упруго искажает электронный солитон",
+        "course": 2
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 10, "lesson_title": "График функции, по данным астрономических наблюдений",
+        "is_homework": true, "homework_title": "Сверхпроводник в принципе притягивает спиральный фронт",
+        "course": 2
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 1, "lesson_title": "Согласно классификации М.Вебера, фирменное наименование лицензирует умысел",
+        "is_homework": true, "homework_title": "Культ джайнизма включает в себя поклонение Махавире",
+        "course":3
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 2, "lesson_title": "Общественной палаты. В ряде недавних судебных решений реальность порождена временем",
+        "is_homework": true, "homework_title": "Причиненный ущерб, в представлениях континентальной школы права",
+        "course": 3
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 3, "lesson_title": "В слабопеременных полях (при флуктуациях на уровне единиц процентов) гравитирующая сфера",
+        "is_homework": true, "homework_title": "Экситон, как того требуют законы термодинамики, масштабирует электронный кристалл",
+        "course": 3
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 4, "lesson_title": "Разрыв заряжает вихрь",
+        "is_homework": true, "homework_title": "Возмущение плотности стохастично притягивает объект",
+        "course": 3
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 5, "lesson_title": "Электрон трансформирует наносекундный лазер, однозначно свидетельствуя о неустойчивости процесса в целом",
+        "is_homework": true, "homework_title": "Турбулентность когерентна. Химическое соединение активно",
+        "course": 3
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 6, "lesson_title": "ОИсследователями из разных лабораторий неоднократно наблюдалось",
+        "is_homework": true, "homework_title": "Призма мгновенно синхронизует тангенциальный кристалл",
+        "course": 3
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 7, "lesson_title": "Магнит поглощает фонон",
+        "is_homework": true, "homework_title": "олебание, как можно показать с помощью не совсем тривиальных вычислений, определяет квантовый экситон",
+        "course": 3
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 8, "lesson_title": "Не факт, что линейное уравнение небезынтересно",
+        "is_homework": true, "homework_title": "Дело в том, что начало координат позитивно программирует кварк",
+        "course": 3
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 9, "lesson_title": "Колебание проецирует циркулирующий квазар, при этом дефект массы не образуется",
+        "is_homework": true, "homework_title": "Непрерывная функция упруго искажает электронный солитон",
+        "course": 3
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 10, "lesson_title": "График функции, по данным астрономических наблюдений",
+        "is_homework": true, "homework_title": "Сверхпроводник в принципе притягивает спиральный фронт",
+        "course": 3
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 1, "lesson_title": "Согласно классификации М.Вебера, фирменное наименование лицензирует умысел",
+        "is_homework": true, "homework_title": "Культ джайнизма включает в себя поклонение Махавире",
+        "course":4
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 2, "lesson_title": "Общественной палаты. В ряде недавних судебных решений реальность порождена временем",
+        "is_homework": true, "homework_title": "Причиненный ущерб, в представлениях континентальной школы права",
+        "course": 4
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 3, "lesson_title": "В слабопеременных полях (при флуктуациях на уровне единиц процентов) гравитирующая сфера",
+        "is_homework": true, "homework_title": "Экситон, как того требуют законы термодинамики, масштабирует электронный кристалл",
+        "course": 4
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 4, "lesson_title": "Разрыв заряжает вихрь",
+        "is_homework": true, "homework_title": "Возмущение плотности стохастично притягивает объект",
+        "course": 4
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 5, "lesson_title": "Электрон трансформирует наносекундный лазер, однозначно свидетельствуя о неустойчивости процесса в целом",
+        "is_homework": true, "homework_title": "Турбулентность когерентна. Химическое соединение активно",
+        "course": 4
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 6, "lesson_title": "ОИсследователями из разных лабораторий неоднократно наблюдалось",
+        "is_homework": true, "homework_title": "Призма мгновенно синхронизует тангенциальный кристалл",
+        "course": 4
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 7, "lesson_title": "Магнит поглощает фонон",
+        "is_homework": true, "homework_title": "олебание, как можно показать с помощью не совсем тривиальных вычислений, определяет квантовый экситон",
+        "course": 4
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 8, "lesson_title": "Не факт, что линейное уравнение небезынтересно",
+        "is_homework": true, "homework_title": "Дело в том, что начало координат позитивно программирует кварк",
+        "course": 4
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 9, "lesson_title": "Колебание проецирует циркулирующий квазар, при этом дефект массы не образуется",
+        "is_homework": true, "homework_title": "Непрерывная функция упруго искажает электронный солитон",
+        "course": 4
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 10, "lesson_title": "График функции, по данным астрономических наблюдений",
+        "is_homework": true, "homework_title": "Сверхпроводник в принципе притягивает спиральный фронт",
+        "course": 4
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 1, "lesson_title": "Согласно классификации М.Вебера, фирменное наименование лицензирует умысел",
+        "is_homework": true, "homework_title": "Культ джайнизма включает в себя поклонение Махавире",
+        "course": 5
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 2, "lesson_title": "Общественной палаты. В ряде недавних судебных решений реальность порождена временем",
+        "is_homework": true, "homework_title": "Причиненный ущерб, в представлениях континентальной школы права",
+        "course": 5
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 3, "lesson_title": "В слабопеременных полях (при флуктуациях на уровне единиц процентов) гравитирующая сфера",
+        "is_homework": true, "homework_title": "Экситон, как того требуют законы термодинамики, масштабирует электронный кристалл",
+        "course": 5
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 4, "lesson_title": "Разрыв заряжает вихрь",
+        "is_homework": true, "homework_title": "Возмущение плотности стохастично притягивает объект",
+        "course": 5
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 5, "lesson_title": "Электрон трансформирует наносекундный лазер, однозначно свидетельствуя о неустойчивости процесса в целом",
+        "is_homework": true, "homework_title": "Турбулентность когерентна. Химическое соединение активно",
+        "course": 5
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 6, "lesson_title": "ОИсследователями из разных лабораторий неоднократно наблюдалось",
+        "is_homework": true, "homework_title": "Призма мгновенно синхронизует тангенциальный кристалл",
+        "course": 5
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 7, "lesson_title": "Магнит поглощает фонон",
+        "is_homework": true, "homework_title": "олебание, как можно показать с помощью не совсем тривиальных вычислений, определяет квантовый экситон",
+        "course": 5
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 8, "lesson_title": "Не факт, что линейное уравнение небезынтересно",
+        "is_homework": true, "homework_title": "Дело в том, что начало координат позитивно программирует кварк",
+        "course": 5
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 9, "lesson_title": "Колебание проецирует циркулирующий квазар, при этом дефект массы не образуется",
+        "is_homework": true, "homework_title": "Непрерывная функция упруго искажает электронный солитон",
+        "course": 5
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 10, "lesson_title": "График функции, по данным астрономических наблюдений",
+        "is_homework": true, "homework_title": "Сверхпроводник в принципе притягивает спиральный фронт",
+        "course": 5
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 1, "lesson_title": "Согласно классификации М.Вебера, фирменное наименование лицензирует умысел",
+        "is_homework": true, "homework_title": "Культ джайнизма включает в себя поклонение Махавире",
+        "course": 6
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 2, "lesson_title": "Общественной палаты. В ряде недавних судебных решений реальность порождена временем",
+        "is_homework": true, "homework_title": "Причиненный ущерб, в представлениях континентальной школы права",
+        "course": 6
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 3, "lesson_title": "В слабопеременных полях (при флуктуациях на уровне единиц процентов) гравитирующая сфера",
+        "is_homework": true, "homework_title": "Экситон, как того требуют законы термодинамики, масштабирует электронный кристалл",
+        "course": 6
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 4, "lesson_title": "Разрыв заряжает вихрь",
+        "is_homework": true, "homework_title": "Возмущение плотности стохастично притягивает объект",
+        "course": 6
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 5, "lesson_title": "Электрон трансформирует наносекундный лазер, однозначно свидетельствуя о неустойчивости процесса в целом",
+        "is_homework": true, "homework_title": "Турбулентность когерентна. Химическое соединение активно",
+        "course": 6
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 6, "lesson_title": "ОИсследователями из разных лабораторий неоднократно наблюдалось",
+        "is_homework": true, "homework_title": "Призма мгновенно синхронизует тангенциальный кристалл",
+        "course": 6
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 7, "lesson_title": "Магнит поглощает фонон",
+        "is_homework": true, "homework_title": "олебание, как можно показать с помощью не совсем тривиальных вычислений, определяет квантовый экситон",
+        "course": 6
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 8, "lesson_title": "Не факт, что линейное уравнение небезынтересно",
+        "is_homework": true, "homework_title": "Дело в том, что начало координат позитивно программирует кварк",
+        "course": 6
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 9, "lesson_title": "Колебание проецирует циркулирующий квазар, при этом дефект массы не образуется",
+        "is_homework": true, "homework_title": "Непрерывная функция упруго искажает электронный солитон",
+        "course": 6
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 10, "lesson_title": "График функции, по данным астрономических наблюдений",
+        "is_homework": true, "homework_title": "Сверхпроводник в принципе притягивает спиральный фронт",
+        "course": 6
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 1, "lesson_title": "Согласно классификации М.Вебера, фирменное наименование лицензирует умысел",
+        "is_homework": true, "homework_title": "Культ джайнизма включает в себя поклонение Махавире",
+        "course": 7
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 2, "lesson_title": "Общественной палаты. В ряде недавних судебных решений реальность порождена временем",
+        "is_homework": true, "homework_title": "Причиненный ущерб, в представлениях континентальной школы права",
+        "course": 7
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 3, "lesson_title": "В слабопеременных полях (при флуктуациях на уровне единиц процентов) гравитирующая сфера",
+        "is_homework": true, "homework_title": "Экситон, как того требуют законы термодинамики, масштабирует электронный кристалл",
+        "course": 7
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 4, "lesson_title": "Разрыв заряжает вихрь",
+        "is_homework": true, "homework_title": "Возмущение плотности стохастично притягивает объект",
+        "course": 7
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 5, "lesson_title": "Электрон трансформирует наносекундный лазер, однозначно свидетельствуя о неустойчивости процесса в целом",
+        "is_homework": true, "homework_title": "Турбулентность когерентна. Химическое соединение активно",
+        "course": 7
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 6, "lesson_title": "ОИсследователями из разных лабораторий неоднократно наблюдалось",
+        "is_homework": true, "homework_title": "Призма мгновенно синхронизует тангенциальный кристалл",
+        "course": 7
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 7, "lesson_title": "Магнит поглощает фонон",
+        "is_homework": true, "homework_title": "олебание, как можно показать с помощью не совсем тривиальных вычислений, определяет квантовый экситон",
+        "course": 7
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 8, "lesson_title": "Не факт, что линейное уравнение небезынтересно",
+        "is_homework": true, "homework_title": "Дело в том, что начало координат позитивно программирует кварк",
+        "course": 7
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 9, "lesson_title": "Колебание проецирует циркулирующий квазар, при этом дефект массы не образуется",
+        "is_homework": true, "homework_title": "Непрерывная функция упруго искажает электронный солитон",
+        "course": 7
+      }
+  },
+  {
+    "model": "study.lesson",
+    "fields":
+      {
+        "lesson_number": 10, "lesson_title": "График функции, по данным астрономических наблюдений",
+        "is_homework": true, "homework_title": "Сверхпроводник в принципе притягивает спиральный фронт",
+        "course": 7
+      }
+  }
+]
