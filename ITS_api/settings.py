@@ -181,3 +181,18 @@ class Prod(Base):
 
 
 
+class Test(Base):
+    DEBUG = False
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+    SECRET_KEY = '9@s0j(3y6nabfs!*9=$ucs1&3jpxuf4x^(-0@j=hmoay9*ya8p'
+
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+
+

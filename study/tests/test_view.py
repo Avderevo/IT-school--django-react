@@ -1,7 +1,7 @@
 import json
 from django.urls import reverse
 from rest_framework.test import APITestCase, APIClient
-from users.tests.test import TokenTestCase
+from users.tests.test_view import TokenTestCase
 
 
 class StudyViewApiTest(TokenTestCase):
