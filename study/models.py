@@ -41,7 +41,7 @@ class Lesson(models.Model):
     is_homework = models.BooleanField(default=False)
     homework_title = models.CharField(max_length=125, blank=True, verbose_name='Домашнее задание' )
     lesson_number = models.IntegerField(verbose_name='Номер урока')
-    date_start = models.DateTimeField(blank=True, null=True)
+    date = models.DateTimeField(blank=True, null=True)
     course = models.ForeignKey(Course, on_delete=models.CASCADE, verbose_name='Курс')
 
     def __str__(self):

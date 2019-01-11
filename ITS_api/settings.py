@@ -25,14 +25,14 @@ class Base(Configuration):
         'django.contrib.messages',
         'django.contrib.staticfiles',
 
-        'rest_framework',
-        'django_extensions',
         'corsheaders',
+        'django_extensions',
+        'rest_framework',
 
         'frontend',
         'users',
         'study',
-        'school',
+
 
     ]
 
@@ -169,7 +169,6 @@ class Dev(Base):
     }
 
 
-
 class Prod(Base):
 
     DEBUG = False
@@ -177,8 +176,8 @@ class Prod(Base):
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    STATIC_ROOT = os.path.join(BASE_DIR, '../static/')
 
+    STATIC_ROOT = os.path.join(BASE_DIR, '../static/')
 
 
 class Test(Base):
