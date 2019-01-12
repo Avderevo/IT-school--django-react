@@ -6,6 +6,8 @@ from rest_framework import permissions, status
 from rest_framework.permissions import IsAuthenticated
 from . import serializers
 from study.fixtures.teachers import Teachers
+from django.db.models import F
+
 
 
 class LessonVieSet(viewsets.ViewSet):
@@ -33,7 +35,7 @@ class LessonVieSet(viewsets.ViewSet):
 
     def get_teacher_courses(self, request):
         user = request.user
-        if user.profile.status==2:
+        if user.profile.status == 2:
             course_stat = CourseStatistic.objects.filter(user=request.user)
         else:
             course_stat=[]
@@ -66,19 +68,8 @@ class HomeworkStatusChange(APIView):
     permission_classes = (IsAuthenticated,)
 
     def post(self, request, statisticId):
-        statistic = LessonStatistic.objects.filter(id=statisticId).first()
-        stat = request.data['status']
-        statistic.homework_status = int(stat)
-        statistic.save()
-        self.save_done_status(stat, statistic.user_id)
+        LessonStatistic.objects.filter(id=statisticId).update(homework_status=int(request.data['status']))
         return Response(status=status.HTTP_201_CREATED)
-
-    @staticmethod
-    def save_done_status(status, userId):
-        if int(status) == 4:
-            course_stat = CourseStatistic.objects.filter(user_id=userId).first()
-            course_stat.homework_done += 1
-            course_stat.save()
 
 
 class CourseTest(APIView):
@@ -94,11 +85,11 @@ class CourseTest(APIView):
             content = {'message': 'Тест не пройден'}
 
             if test['testResult'] and test['testResult'] == '4':
-                CourseStatistic.objects.create(user = user, course = course, is_active = True)
+                CourseStatistic.objects.create(user=user, course=course, is_active=True)
                 lessons = Lesson.objects.filter(course_id=course.id)
 
                 for lesson in lessons:
-                    LessonStatistic.objects.create(lesson = lesson, user = user, course = course)
+                    LessonStatistic.objects.create(lesson=lesson, user=user, course=course)
             else:
                 return Response(content, status=status.HTTP_400_BAD_REQUEST)
             return Response(status=status.HTTP_201_CREATED)
@@ -111,14 +102,14 @@ class SaveChatMessage(APIView):
         data = request.data
         user = request.user
         statistic = LessonStatistic.objects.filter(id = data['statisticId']).first()
-        Message.objects.create(lesson_statistic = statistic, message_body = data['message'], user = user)
+        Message.objects.create(lesson_statistic=statistic, message_body=data['message'], user=user)
         return Response(status=status.HTTP_201_CREATED)
 
 
 class GetChatMessage(viewsets.ViewSet):
 
     def get_message(self, request, statisticId):
-        message = Message.objects.filter(lesson_statistic__id = statisticId)
+        message = Message.objects.filter(lesson_statistic__id=statisticId)
         s = serializers.MessageSerializer(message, many=True)
         return Response(s.data)
 
