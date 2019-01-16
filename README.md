@@ -96,3 +96,16 @@ $ pytest
 
 ### Logging screenshots:
 
+![alt text](https://github.com/Avderevo/IT-school--django-react-/blob/master/img/1.png)
+
+<hr>
+
+![alt text](https://github.com/Avderevo/IT-school--django-react-/blob/master/img/2.png)
+
+<hr>
+
+![alt text](https://github.com/Avderevo/IT-school--django-react-/blob/master/img/3.png)
+
+<hr>
+
+![alt text](https://github.com/Avderevo/IT-school--django-react-/blob/master/img/4.png)
