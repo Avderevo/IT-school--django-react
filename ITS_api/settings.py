@@ -3,6 +3,7 @@ import os
 from configurations import Configuration
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
+import raven
 
 
 
@@ -12,6 +13,11 @@ class Base(Configuration):
         dsn="https://4899eea574ad4f70b4364842ced5266b@sentry.io/1366606",
         integrations=[DjangoIntegration()]
     )
+
+    RAVEN_CONFIG = {
+        'dsn': "https://4899eea574ad4f70b4364842ced5266b@sentry.io/1366606",
+
+    }
 
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -28,15 +34,15 @@ class Base(Configuration):
         'corsheaders',
         'django_extensions',
         'rest_framework',
+        'raven.contrib.django.raven_compat',
 
         'frontend',
         'users',
         'study',
-
-
     ]
 
     MIDDLEWARE = [
+        'raven.contrib.django.raven_compat.middleware.Sentry404CatchMiddleware',
         'corsheaders.middleware.CorsMiddleware',  # -----------!
         'django.middleware.security.SecurityMiddleware',
         'django.contrib.sessions.middleware.SessionMiddleware',
@@ -152,6 +158,7 @@ class Base(Configuration):
     STATICFILES_DIRS = [
         os.path.join(REACT_APP_DIR, 'build', 'static'),
     ]
+
 
 
 class Dev(Base):

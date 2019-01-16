@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-from study.models import Course, Lesson
 
 
 class Activation(models.Model):

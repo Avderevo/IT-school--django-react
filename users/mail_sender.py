@@ -1,4 +1,4 @@
-from ITS_api import settings
+from django.conf import settings
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
 from django.urls import reverse
@@ -26,14 +26,3 @@ def send_confirm_email(request, email, code):
     }
     send_mail(email, 'activate_profile', context)
 
-
-@job('default')
-def send_reset_password_email(request, email, token, uid):
-    context = {
-        'subject': ('Restore password'),
-        'uri': request.build_absolute_uri(
-            reverse('users:restore_password', kwargs={
-                'uidb64': uid, 'token': token})),
-    }
-
-    send_mail(email, 'restore_password_email', context)

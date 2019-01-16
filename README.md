@@ -76,3 +76,23 @@ $ python manage.py runserver
 $ pytest
 
 ```
+
+# Logging in Sentry
+
+#### To customize logging in Sentry change your Configure URL in the  settings.py
+
+```
+  sentry_sdk.init(
+        dsn="https://4899eea574ad4f70b4364842ced5266b@sentry.io/1366606",
+        integrations=[DjangoIntegration()]
+    )
+
+    RAVEN_CONFIG = {
+        'dsn': "https://4899eea574ad4f70b4364842ced5266b@sentry.io/1366606",
+
+    }
+
+```
+
+### Logging screenshots:
+
