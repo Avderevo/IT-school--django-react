@@ -20,7 +20,7 @@ RUN apk update && apk add --update --no-cache --progress \
     jpeg-dev libpng-dev freetype-dev \
     && pip3 install --upgrade pip setuptools \
     && pip3 install --no-cache-dir -r /opt/app/requirements.txt \
-
+    && rm -rf \
         /var/cache/apk/*
 
 COPY Deploy/nginx.conf /etc/nginx/nginx.conf
