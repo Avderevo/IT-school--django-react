@@ -12,7 +12,7 @@ urlpatterns = [
     path('users/', include('users.urls')),
     path('study/', include('study.urls')),
 
-    path('',views.ReactAppView.as_view()),
+    re_path('',views.ReactAppView.as_view()),
 
 ]
 
