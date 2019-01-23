@@ -21,7 +21,7 @@ class Base(Configuration):
 
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-    ALLOWED_HOSTS = []
+    ALLOWED_HOSTS = ['*']
 
     INSTALLED_APPS = [
         'django.contrib.admin',
@@ -90,7 +90,7 @@ class Base(Configuration):
         },
     ]
 
-    LANGUAGE_CODE = 'en-us'
+    LANGUAGE_CODE = 'ru'
 
     TIME_ZONE = 'UTC'
 
@@ -101,6 +101,10 @@ class Base(Configuration):
     USE_TZ = True
 
     STATIC_URL = '/static/'
+
+    MEDIA_URL = '/media/'
+
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
     REST_FRAMEWORK = {
         'DEFAULT_PERMISSION_CLASSES': (
@@ -162,7 +166,6 @@ class Base(Configuration):
 
 
 class Dev(Base):
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
     SECRET_KEY = '9@s0j(3y6nabfs!*9=$ucs1&3jpxuf4x^(-0@j=hmoay9*ya8p'
 
@@ -171,7 +174,7 @@ class Dev(Base):
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            'NAME': os.path.join(Base.BASE_DIR, 'db.sqlite3'),
         }
     }
 
@@ -180,25 +183,18 @@ class Prod(Base):
 
     DEBUG = False
 
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
     SECRET_KEY = os.environ.get('SECRET_KEY')
 
-    STATIC_ROOT = os.path.join(BASE_DIR, '../static/')
-
-
-class Test(Base):
-    DEBUG = False
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-    SECRET_KEY = '9@s0j(3y6nabfs!*9=$ucs1&3jpxuf4x^(-0@j=hmoay9*ya8p'
-
+    STATIC_ROOT = os.path.join(Base.BASE_DIR, '/static/')
 
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'name',
+            'USER': 'user',
+            'PASSWORD': 'password',
+            'HOST': '127.0.0.1',
+            'PORT': ''
         }
     }
-
 

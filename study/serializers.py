@@ -52,6 +52,7 @@ class LessonVsStatisticSerialiser(serializers.ModelSerializer):
         )
 
 
+
 class CourseStatisticSerializer(serializers.ModelSerializer):
     course = CourseSerializer()
 
