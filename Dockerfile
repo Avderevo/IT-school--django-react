@@ -19,7 +19,7 @@ RUN apk update && apk add --update --no-cache --progress \
     musl-dev \
     jpeg-dev libpng-dev freetype-dev \
     && pip3 install --upgrade pip setuptools \
-    && pip3 install --no-cache-dir -r /opt/app/requirements.txt \
+    && pip3 install -r /opt/app/requirements.txt \
     && rm -rf \
         /var/cache/apk/*
 
@@ -29,6 +29,6 @@ COPY Deploy/nginx-site.conf /etc/nginx/conf.d/default.conf
 VOLUME ["/opt/app/media"]
 WORKDIR /opt/app
 
-EXPOSE 80
+EXPOSE 8000
 
 CMD ["./Deploy/start_in_docker.sh"]
