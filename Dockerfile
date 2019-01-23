@@ -15,6 +15,7 @@ RUN apk update && apk add --update --no-cache --progress \
     postgresql-dev \
     nginx \
     linux-headers \
+    sqlite \
     pcre-dev \
     musl-dev \
     jpeg-dev libpng-dev freetype-dev \
@@ -26,7 +27,6 @@ RUN apk update && apk add --update --no-cache --progress \
 COPY Deploy/nginx.conf /etc/nginx/nginx.conf
 COPY Deploy/nginx-site.conf /etc/nginx/conf.d/default.conf
 
-VOLUME ["/opt/app/media"]
 WORKDIR /opt/app
 
 EXPOSE 8000
