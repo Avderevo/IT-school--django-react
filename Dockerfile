@@ -1,6 +1,6 @@
 FROM alpine:3.8
 
-COPY . /opt/app
+COPY requirements.txt /opt/app/requirements.txt
 
 RUN apk update && apk add --update --no-cache --progress \
     make \
@@ -19,16 +19,15 @@ RUN apk update && apk add --update --no-cache --progress \
     pcre-dev \
     musl-dev \
     jpeg-dev libpng-dev freetype-dev \
-    && pip3 install --upgrade pip setuptools \
-    && pip3 install -r /opt/app/requirements.txt \
-    && rm -rf \
-        /var/cache/apk/*
+    && rm -rf /var/cache/apk/*
 
-COPY Deploy/nginx.conf /etc/nginx/nginx.conf
-COPY Deploy/nginx-site.conf /etc/nginx/conf.d/default.conf
+RUN pip3 install --upgrade pip setuptools \
+    && pip3 install -r /opt/app/requirements.txt 
+
+#COPY Deploy/nginx.conf /etc/nginx/nginx.conf
+#COPY Deploy/nginx-site.conf /etc/nginx/conf.d/default.conf
+COPY . /opt/app
 
 WORKDIR /opt/app
-
 EXPOSE 8000
-
 CMD ["./Deploy/start_in_docker.sh"]
