@@ -1,8 +1,9 @@
 import datetime
 import os
-from configurations import Configuration
+from configurations import Configuration, values
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
+import dj_database_url
 import raven
 
 
@@ -171,12 +172,9 @@ class Dev(Base):
 
     DEBUG = True
 
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(Base.BASE_DIR, 'db.sqlite3'),
-        }
-    }
+    INTERNAL_IPS = ('127.0.0.1',)
+
+    DATABASES = values.DatabaseURLValue('sqlite:///db.sqlite3')
 
 
 class Prod(Base):
@@ -185,16 +183,9 @@ class Prod(Base):
 
     SECRET_KEY = os.environ.get('SECRET_KEY')
 
+    STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+
     STATIC_ROOT = os.path.join(Base.BASE_DIR, '/static/')
 
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'name',
-            'USER': 'user',
-            'PASSWORD': 'password',
-            'HOST': '127.0.0.1',
-            'PORT': ''
-        }
-    }
+    DATABASES = values.DatabaseURLValue('postgres://postgres:postgres@db:5432/ITS')
 
