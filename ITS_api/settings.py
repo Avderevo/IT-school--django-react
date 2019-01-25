@@ -183,7 +183,7 @@ class Prod(Base):
 
     SECRET_KEY = '9@s0j(3y6nabfs!*9=$ucs1&3jpxuf4x^(-0@j=hmoay9*ya8p'
 
- #   STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+    STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
     STATIC_ROOT = os.path.join(Base.BASE_DIR, '/static/')
 
