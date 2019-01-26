@@ -1,5 +1,5 @@
 FROM alpine:3.8
-COPY .. /opt/app
+
 COPY ../requirements.txt /opt/app/requirements.txt
 
 RUN apk update && apk add --update --no-cache --progress \
@@ -30,4 +30,4 @@ COPY Deploy/nginx-site.conf /etc/nginx/conf.d/default.conf
 VOLUME ["/opt/app/media"]
 WORKDIR /opt/app
 EXPOSE 8000
-CMD ["./Deploy/start_in_docker.sh"]ker.sh"]
+CMD ["./Deploy/start_in_docker.sh"]
