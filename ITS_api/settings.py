@@ -101,6 +101,13 @@ class Base(Configuration):
 
     USE_TZ = True
 
+
+    REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend')
+
+    STATICFILES_DIRS = [
+        os.path.join(REACT_APP_DIR, 'build', 'static'),
+    ]
+
     STATIC_URL = '/static/'
 
     MEDIA_URL = '/media/'
@@ -158,11 +165,6 @@ class Base(Configuration):
 
     INTERNAL_IPS = '127.0.0.1'
 
-    REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend')
-
-    STATICFILES_DIRS = [
-        os.path.join(REACT_APP_DIR, 'build', 'static'),
-    ]
 
 
 
