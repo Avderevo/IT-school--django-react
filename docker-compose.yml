@@ -3,7 +3,7 @@ services:
     web:
         build:
             context: .
-            dockerfile: Dockerfile
+            dockerfile: app/Dockerfile
         restart: always
         volumes:
             - ./:/opt/app
